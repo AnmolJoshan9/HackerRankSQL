@@ -1,0 +1,4 @@
+SELECT TRUNCATE(sum(LAT_N),4) as LAT_N
+FROM station
+WHERE LAT_N > 38.7880 and LAT_N < 137.2345
+
