@@ -1,0 +1,4 @@
+SELECT ROUND(LAT_N , 4)
+FROM station
+WHERE LAT_N > 38.7780
+ORDER BY LAT_N asc limit 1;
