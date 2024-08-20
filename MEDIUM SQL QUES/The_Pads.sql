@@ -1,6 +1,10 @@
-Select concat(Name,'(',substr(occupation,1,1),')') na from occupations
-order by na;
-Select concat('There are a total of ',count(occupation),' ', lower(occupation),'s.')
-from occupations
-group by occupation
-order by count(occupation),occupation;
+-- First Query
+SELECT CONCAT(Name, '(', SUBSTR(occupation, 1, 1), ')') AS na
+FROM occupations
+ORDER BY na;
+
+-- Second Query
+SELECT CONCAT('There are a total of ', COUNT(occupation), ' ', LOWER(occupation), 's.')
+FROM occupations
+GROUP BY occupation
+ORDER BY COUNT(occupation), occupation;
